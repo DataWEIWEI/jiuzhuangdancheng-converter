@@ -1,6 +1,24 @@
 <template>
+  <SettingBar/>
+  <WinAction/>
   <router-view/>
 </template>
+
+
+<script>
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/js/bootstrap'
+import SettingBar from './components/SettingBar.vue'
+import WinAction from './components/WinAction.vue'
+
+export default {
+  name: 'App',
+  components: {
+    SettingBar,
+    WinAction,
+  }
+}
+</script>
 
 <style>
 #app {
